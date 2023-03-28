@@ -83,3 +83,7 @@ a.article-title:hover {
 .account-heading {
     font-size: 2.5rem;
 }
+/* your bootstrap not complete */
+.mr-auto {
+    margin-right: auto!important;
+}
