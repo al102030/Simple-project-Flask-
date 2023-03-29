@@ -8,6 +8,7 @@ flask = "*"
 flask-wtf = "*"
 email-validator = "*"
 flask-sqlalchemy = "*"
+tree = "*"
 
 [dev-packages]
 autopep8 = "*"
