@@ -9,6 +9,9 @@ flask-wtf = "*"
 email-validator = "*"
 flask-sqlalchemy = "*"
 tree = "*"
+sqlalchemy = "*"
+flask-bcrypt = "*"
+flask-login = "*"
 
 [dev-packages]
 autopep8 = "*"
