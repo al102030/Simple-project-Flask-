@@ -13,6 +13,7 @@ sqlalchemy = "*"
 flask-bcrypt = "*"
 flask-login = "*"
 pillow = "*"
+requests = "*"
 
 [dev-packages]
 autopep8 = "*"
