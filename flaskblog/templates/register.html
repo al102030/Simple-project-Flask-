@@ -11,7 +11,7 @@
                     {{ form.username(class='form-control form-control-lg is_invalid') }}
                     <div class="nvalid-feedback">
                         {% for error in form.username.errors %}
-                            <span><{{ error }}/span>
+                            <span>{{ error }}</span>
                         {% endfor %}
                     </div>
                 {% else %}
@@ -24,7 +24,7 @@
                 {{ form.email(class='form-control form-control-lg is_invalid') }}
                 <div class="nvalid-feedback">
                     {% for error in form.email.errors %}
-                        <span><{{ error }}/span>
+                        <span>{{ error }}</span>
                     {% endfor %}
                 </div>
             {% else %}
@@ -37,7 +37,7 @@
                 {{ form.password(class='form-control form-control-lg is_invalid') }}
                 <div class="nvalid-feedback">
                     {% for error in form.password.errors %}
-                        <span><{{ error }}/span>
+                        <span>{{ error }}</span>
                     {% endfor %}
                 </div>
             {% else %}
@@ -50,7 +50,7 @@
                 {{ form.confirm_password(class='form-control form-control-lg is_invalid') }}
                 <div class="nvalid-feedback">
                     {% for error in form.confirm_password.errors %}
-                        <span><{{ error }}/span>
+                        <span>{{ error }}</span>
                     {% endfor %}
                 </div>
             {% else %}
