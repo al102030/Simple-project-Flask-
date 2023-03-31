@@ -12,6 +12,7 @@ tree = "*"
 sqlalchemy = "*"
 flask-bcrypt = "*"
 flask-login = "*"
+pillow = "*"
 
 [dev-packages]
 autopep8 = "*"
