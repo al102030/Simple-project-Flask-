@@ -27,7 +27,8 @@ class User(db.Model, UserMixin):
         s = Serializer(app.config['SECRET_KEY'])
         try:
             user_id = s.loads(token)['user_id']
-        except:
+        except ValueError as e:
+            print(e)
             return None
         return User.query.get(user_id)
 
