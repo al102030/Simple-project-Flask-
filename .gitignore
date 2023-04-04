@@ -4,6 +4,9 @@ profile_pics/
 *.py[cod]
 *$py.class
 .DS_Store
+.vscode/
+Pipfile
+Pipfile.lock
 # C extensions
 *.so
 
