@@ -11,6 +11,7 @@ ___
   - [Install dependencies](#install-dependencies)
   - [Running project](#running-project)
   - [Congratulations, It's Done!](#congratulations-its-done)
+  - [Project interface](#project-interface)
 
 
 ## Instructions for setting up Python and dependencies
@@ -90,6 +91,12 @@ In your browser open this linm:<br>
 <br>
 > ***Congratulations***!<br>
 > Now you can develop your own app.
+
+## Project interface
+
+![Flask Blog](./main-page.png)
+
+
 
 <br>
 <br>
