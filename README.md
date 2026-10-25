@@ -42,31 +42,31 @@ Clone project by this command:<br>
 
 All requirements that you need to install:
 ```
-bcrypt==4.0.1
-blinker==1.6
-certifi==2022.12.7
-charset-normalizer==3.1.0
-click==8.1.3
-dnspython==2.3.0
-email-validator==1.3.1
-flask==2.2.3
+bcrypt==5.0.0
+blinker==1.9.0
+certifi==2026.10.19
+charset-normalizer==3.4.4
+click==8.3.0
+dnspython==2.8.0
+email-validator==2.3.0
+flask==3.1.3
 flask-bcrypt==1.0.1
-flask-login==0.6.2
-flask-mail==0.9.1
-flask-sqlalchemy==3.0.3
-flask-wtf==1.1.1
-greenlet==2.0.2
-idna==3.4
-itsdangerous==2.0.1
-jinja2==3.1.2
-markupsafe==2.1.2
-pillow==9.5.0
-requests==2.28.2
-sqlalchemy==2.0.8
-typing-extensions==4.5.0
-urllib3==1.26.15
-werkzeug==2.2.3
-wtforms==3.0.1
+flask-login==0.6.3
+flask-mail==0.10.0
+flask-sqlalchemy==3.1.1
+flask-wtf==1.2.2
+greenlet==3.2.4
+idna==3.15
+itsdangerous==2.2.0
+jinja2==3.1.6
+markupsafe==3.0.3
+pillow==13.0.0
+requests==2.33.0
+sqlalchemy==2.0.44
+typing-extensions==4.15.0
+urllib3==2.8.0
+werkzeug==3.1.9
+wtforms==3.2.1
 ```
 
 ## Install dependencies
@@ -74,7 +74,7 @@ wtforms==3.0.1
 First enter to project directory:<br>
 ``cd Simple-project-Flask-``<br>
 Install requirements by pipenv:<br>
-``pipenv install -r requirements. txt``
+``pipenv install -r requirements.txt``
 
 ## Running project
 
