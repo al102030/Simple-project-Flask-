@@ -60,7 +60,7 @@ idna==3.4
 itsdangerous==2.0.1
 jinja2==3.1.2
 markupsafe==2.1.2
-pillow==9.5.0
+pillow==13.0.0
 requests==2.28.2
 sqlalchemy==2.0.8
 typing-extensions==4.5.0
