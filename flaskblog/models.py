@@ -1,5 +1,6 @@
 from datetime import datetime
-from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+from itsdangerous import URLSafeTimedSerializer as Serializer
+from itsdangerous.exc import BadSignature, SignatureExpired
 from flask import current_app
 from flask_login import UserMixin
 from flaskblog import db, login_manager
@@ -20,15 +21,15 @@ class User(db.Model, UserMixin):
     posts = db.relationship('Post', backref='author', lazy=True)
 
     def get_reset_token(self, expires_sec=1800):
-        s = Serializer(current_app.config['SECRET_KEY'], expires_sec)
-        return s.dumps({'user_id': self.id}).decode('utf-8')
+        s = Serializer(current_app.config['SECRET_KEY'])
+        return s.dumps({'user_id': self.id})
 
     @staticmethod
-    def verify_reset_token(token):
+    def verify_reset_token(token, expires_sec=1800):
         s = Serializer(current_app.config['SECRET_KEY'])
         try:
-            user_id = s.loads(token)['user_id']
-        except ValueError as e:
+            user_id = s.loads(token, max_age=expires_sec)['user_id']
+        except (BadSignature, SignatureExpired, ValueError) as e:
             print(e)
             return None
         return User.query.get(user_id)
